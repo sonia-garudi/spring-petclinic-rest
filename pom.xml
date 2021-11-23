@@ -164,9 +164,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <arguments>
-                        <argument>org.springframework.cloud.bindings.boot.enable=true</argument>
-                    </arguments>
+                    <systemPropertyVariables>
+                        <org.springframework.cloud.bindings.boot.enable>true</org.springframework.cloud.bindings.boot.enable>
+                    </systemPropertyVariables>
                 </configuration>
                 <executions>
                     <execution>
