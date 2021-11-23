@@ -163,6 +163,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <arguments>
+                        <argument>org.springframework.cloud.bindings.boot.enable=true</argument>
+                    </arguments>
+                </configuration>
                 <executions>
                     <execution>
                         <!-- Spring Boot Actuator displays build-related information
